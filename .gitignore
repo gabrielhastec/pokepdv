@@ -1,38 +1,36 @@
-# Dependências
-node_modules/
-.mvn/
+# === BACKEND (Java / Maven / Spring Boot) ===
 target/
+*.class
 *.jar
 *.war
-!gradle-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
 
-# Build
-dist/
-build/
-
-# Variáveis de ambiente
-.env
-.env.local
-.env.*.local
-
-# IDE
+# IDEs
 .idea/
 *.iml
 .vscode/
-*.swp
-*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# Logs
-*.log
-logs/
+# === FRONTEND (Node / Vite / React) ===
+node_modules/
+dist/
+.vite/
+*.local
 
-# Sistema operacional
+# === AMBIENTE — NUNCA commitar com valores reais ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === SISTEMA OPERACIONAL ===
 .DS_Store
 Thumbs.db
 
-# Flyway local dev
-flyway.conf
-
-# arquivos de config local do Spring
-**/application-local.properties
-**/application-local.yml
+# === LOGS ===
+*.log
+logs/
