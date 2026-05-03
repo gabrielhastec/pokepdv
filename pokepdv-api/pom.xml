@@ -8,7 +8,7 @@
 		<version>3.5.14</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>dev.pokepdv</groupId>
+	<groupId>dev.pokepdv.api</groupId>
 	<artifactId>pokepdv-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
