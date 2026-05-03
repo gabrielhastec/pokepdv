@@ -1,4 +1,15 @@
-// Placeholder para build do TypeScript na Fase 1. Lógica de negócio será adicionada na Fase 4.
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './features/auth/AuthContext';
+import AppRouter from './router';
+
 export default function App() {
-  return null;
+
+  return (
+      <BrowserRouter>
+        <AuthProvider>
+          <AppRouter />
+        </AuthProvider>
+      </BrowserRouter>
+  );
+
 }
