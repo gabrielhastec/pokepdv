@@ -54,7 +54,7 @@ jobs:
       - name: Check branch naming convention
         run: |
           BRANCH=${{ github.head_ref || github.ref_name }}
-          if ! echo $BRANCH | grep -qE '^(main|develop|(feat|fix|chore|docs|test|refactor)/[a-z0-9-]+)$'; then
+          if ! echo $BRANCH | grep -qE '^([a-z0-9-]+/)?(main|develop|feat|fix|chore|docs|test|refactor)(/[a-z0-9-]+)?$'; then
             echo 'Branch fora da convenção. Use: tipo/descricao-em-kebab'
             exit 1
           fi
